@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Project Samara</ion-title>
+    <ion-buttons end>
+      <button (click)="godMode($event)" ion-button icon-only>
+        <ion-icon name="more"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <img src="../assets/images/logo.svg" alt="Metal Moose Logo" height="200px">
+  <div class="center">
+    <h1>Metal Moose Scouting</h1>
+    <h3>Project Samsara</h3>
+    <div class="options">
+      <button ion-button block>Pit Scouting</button>
+      <button ion-button block color="danger">Match Scouting</button>
+      <button ion-button block color="secondary">Sync</button>
+    </div>
+  </div>
+</ion-content> 
