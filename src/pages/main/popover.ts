@@ -4,7 +4,7 @@ import { ViewController } from 'ionic-angular';
   templateUrl: 'popover.html'
 })
 
-export class PopoverContentPage {
+export class GodMode {
 constructor(public viewCtrl: ViewController) {}
 close() {
     this.viewCtrl.dismiss();

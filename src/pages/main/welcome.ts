@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, PopoverController } from 'ionic-angular';
-import { PopoverContentPage } from './popover';
+import { GodMode } from './popover';
 import { PitScouting } from '../pitscouting/pitscouting';
 
 @Component({
@@ -12,7 +12,7 @@ export class Welcome {
   constructor(public navCtrl: NavController, public popoverCtrl: PopoverController) { }
 
   godMode(myEvent) {
-     let popover = this.popoverCtrl.create(PopoverContentPage);
+     let popover = this.popoverCtrl.create(GodMode);
     popover.present({
       ev: myEvent
     });

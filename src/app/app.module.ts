@@ -2,9 +2,10 @@ import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { Welcome } from '../pages/main/welcome';
+import { GodMode } from '../pages/main/popover';
 import { Page2 } from '../pages/page2/page2';
 import { PitScouting } from '../pages/pitscouting/pitscouting';
-import { PopoverContentPage } from '../pages/main/popover';
+import { TeamLock } from '../pages/pitscouting/popover';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
@@ -12,9 +13,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   declarations: [
     MyApp,
     Welcome,
+    GodMode,
     Page2,
     PitScouting,
-    PopoverContentPage
+    TeamLock
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -23,9 +25,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   entryComponents: [
     MyApp,
     Welcome,
+    GodMode,
     Page2,
     PitScouting,
-    PopoverContentPage
+    TeamLock
   ],
   providers: [
     StatusBar,

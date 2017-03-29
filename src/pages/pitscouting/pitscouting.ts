@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, PopoverController } from 'ionic-angular';
-import { PopoverContentPage } from './popover';
+import { TeamLock } from './popover';
 
 /*
   Generated class for the Pitscouting page.
@@ -17,7 +17,7 @@ export class PitScouting {
   constructor(public navCtrl: NavController, public popoverCtrl: PopoverController) { }
 
   teamLock(myEvent) {
-     let popover = this.popoverCtrl.create(PopoverContentPage);
+     let popover = this.popoverCtrl.create(TeamLock);
     popover.present({
       ev: myEvent
     });
