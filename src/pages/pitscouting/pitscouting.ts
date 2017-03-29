@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import { NavController, PopoverController } from 'ionic-angular';
+import { PopoverContentPage } from './popover';
 
 /*
   Generated class for the Pitscouting page.
@@ -11,12 +12,14 @@ import { NavController, NavParams } from 'ionic-angular';
   selector: 'page-pitscouting',
   templateUrl: 'pitscouting.html'
 })
-export class PitscoutingPage {
+export class PitScouting {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {}
+  constructor(public navCtrl: NavController, public popoverCtrl: PopoverController) { }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad PitscoutingPage');
+  teamLock(myEvent) {
+     let popover = this.popoverCtrl.create(PopoverContentPage);
+    popover.present({
+      ev: myEvent
+    });
   }
-
 }

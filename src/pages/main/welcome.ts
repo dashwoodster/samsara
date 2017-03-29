@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, PopoverController } from 'ionic-angular';
 import { PopoverContentPage } from './popover';
+import { PitScouting } from '../pitscouting/pitscouting';
 
 @Component({
   selector: 'main-main',
@@ -15,5 +16,9 @@ export class Welcome {
     popover.present({
       ev: myEvent
     });
+  }
+
+  pushPitScouting() {
+   this.navCtrl.push(PitScouting);
   }
 }
