@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, PopoverController } from 'ionic-angular';
+import { NavController, PopoverController, NavPush } from 'ionic-angular';
 import { GodMode } from './popover';
 import { PitScouting } from '../pitscouting/pitscouting';
 
@@ -9,16 +9,13 @@ import { PitScouting } from '../pitscouting/pitscouting';
 })
 export class Welcome {
 
-  constructor(public navCtrl: NavController, public popoverCtrl: PopoverController) { }
-
+  constructor(public navCtrl: NavController, public popoverCtrl: PopoverController) {
+  }
+  PitScouting = PitScouting;
   godMode(myEvent) {
-     let popover = this.popoverCtrl.create(GodMode);
+    let popover = this.popoverCtrl.create(GodMode);
     popover.present({
       ev: myEvent
     });
-  }
-
-  pushPitScouting() {
-   this.navCtrl.push(PitScouting);
   }
 }

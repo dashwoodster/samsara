@@ -15,15 +15,15 @@ export class MyApp {
 
   rootPage: any = Welcome;
 
-  pages: Array<{title: string, component: any, color: any}>;
+  pages: Array<{ title: string, component: any, color: any }>;
 
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
     this.initializeApp();
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Pit Scounting', component: PitScouting, color:'light' },
-      { title: 'Match Scouting', component: Page2, color:'light' }
+      { title: 'Pit Scounting', component: PitScouting, color: 'light' },
+      { title: 'Match Scouting', component: Page2, color: 'light' }
     ];
 
   }
@@ -41,18 +41,21 @@ export class MyApp {
     // Reset the content nav to have just this page
     // we wouldn't want the back button to show in this scenario
     this.nav.setRoot(page.component);
-    page.color='danger';
+    page.color = 'danger';
 
     for (let p of this.pages) {
-    
-    if(p.title==page.title)
-    {
-      p.color='danger';
-    }
-    else 
-    {
-      p.color='';
-    }
+
+      if (p.title == page.title) {
+        p.color = 'danger';
+      }
+      else {
+        p.color = '';
+      }
     }
   }
+
+  // pushMain() {
+  //   this.nav.setRoot(TabsPage);
+  //   this.nav.popToRoot();
+  // }
 }

@@ -18,7 +18,7 @@
     <h1>Metal Moose Scouting</h1>
     <h3>Project Samsara</h3>
     <div class="options">
-      <button ion-button block (click)="pushPitScouting()">Pit Scouting</button>
+      <button ion-button block [navPush]="PitScouting">Pit Scouting</button>
       <button ion-button block color="danger">Match Scouting</button>
       <button ion-button block color="secondary">Sync</button>
     </div>
