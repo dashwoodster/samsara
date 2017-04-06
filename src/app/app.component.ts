@@ -2,7 +2,6 @@ import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import { SqliteTemporary } from '../providers/sqlite-temporary';
 
 import { Welcome } from '../pages/main/welcome';
 import { Page2 } from '../pages/page2/page2';
@@ -18,7 +17,7 @@ export class MyApp {
 
   pages: Array<{ title: string, component: any, color: any }>;
 
-  constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen, public sqlStorage: SqliteTemporary) {
+  constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
     this.initializeApp();
 
     // used for an example of ngFor and navigation

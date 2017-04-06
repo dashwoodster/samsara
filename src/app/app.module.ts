@@ -8,8 +8,13 @@ import { PitScouting } from '../pages/pitscouting/pitscouting';
 import { TeamLock } from '../pages/pitscouting/popover';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import { SQLite } from '@ionic-native/sqlite';
-import { SqliteTemporary } from '../providers/sqlite-temporary';
+import { CloudSettings, CloudModule } from '@ionic/cloud-angular';
+
+const cloudSettings: CloudSettings = {
+  'core': {
+    'app_id': '66889b09'
+  }
+};
 
 @NgModule({
   declarations: [
@@ -21,7 +26,8 @@ import { SqliteTemporary } from '../providers/sqlite-temporary';
     TeamLock
   ],
   imports: [
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    CloudModule.forRoot(cloudSettings)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -35,8 +41,6 @@ import { SqliteTemporary } from '../providers/sqlite-temporary';
   providers: [
     StatusBar,
     SplashScreen,
-    SQLite,
-    SqliteTemporary,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
