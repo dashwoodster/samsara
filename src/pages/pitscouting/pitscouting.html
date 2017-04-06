@@ -18,5 +18,269 @@
   </ion-navbar>
 </ion-header>
 <ion-content padding>
-  <button ion-button navPop>Go Back</button>
+  <h5>Basic Information</h5>
+  <ion-item>
+    <ion-label>Team Number</ion-label>
+    <ion-select [(ngModel)]="gender">
+      <ion-option value="11">11</ion-option>
+      <ion-option value="25">25</ion-option>
+      <ion-option value="56">56</ion-option>
+      <ion-option value="75">75</ion-option>
+      <ion-option value="102">102</ion-option>
+      <ion-option value="103">103</ion-option>
+      <ion-option value="193">193</ion-option>
+      <ion-option value="203">203</ion-option>
+      <ion-option value="219">219</ion-option>
+      <ion-option value="222">222</ion-option>
+      <ion-option value="223">223</ion-option>
+      <ion-option value="225">225</ion-option>
+      <ion-option value="272">272</ion-option>
+      <ion-option value="293">293</ion-option>
+      <ion-option value="303">303</ion-option>
+      <ion-option value="316">316</ion-option>
+      <ion-option value="341">341</ion-option>
+      <ion-option value="365">365</ion-option>
+      <ion-option value="433">433</ion-option>
+      <ion-option value="486">486</ion-option>
+      <ion-option value="555">555</ion-option>
+      <ion-option value="708">708</ion-option>
+      <ion-option value="747">747</ion-option>
+      <ion-option value="816">816</ion-option>
+      <ion-option value="834">834</ion-option>
+      <ion-option value="1218">1218</ion-option>
+      <ion-option value="1257">1257</ion-option>
+      <ion-option value="1279">1279</ion-option>
+      <ion-option value="1370">1370</ion-option>
+      <ion-option value="1391">1391</ion-option>
+      <ion-option value="1403">1403</ion-option>
+      <ion-option value="1495">1495</ion-option>
+      <ion-option value="1640">1640</ion-option>
+      <ion-option value="1676">1676</ion-option>
+      <ion-option value="1712">1712</ion-option>
+      <ion-option value="1807">1807</ion-option>
+      <ion-option value="1811">1811</ion-option>
+      <ion-option value="1923">1923</ion-option>
+      <ion-option value="2458">2458</ion-option>
+      <ion-option value="2539">2539</ion-option>
+      <ion-option value="2590">2590</ion-option>
+      <ion-option value="2600">2600</ion-option>
+      <ion-option value="2607">2607</ion-option>
+      <ion-option value="2729">2729</ion-option>
+      <ion-option value="3142">3142</ion-option>
+      <ion-option value="3314">3314</ion-option>
+      <ion-option value="3637">3637</ion-option>
+      <ion-option value="3929">3929</ion-option>
+      <ion-option value="3974">3974</ion-option>
+      <ion-option value="4285">4285</ion-option>
+      <ion-option value="4342">4342</ion-option>
+      <ion-option value="4575">4575</ion-option>
+      <ion-option value="4637">4637</ion-option>
+      <ion-option value="4750">4750</ion-option>
+      <ion-option value="5181">5181</ion-option>
+      <ion-option value="5401">5401</ion-option>
+      <ion-option value="5407">5407</ion-option>
+      <ion-option value="5420">5420</ion-option>
+      <ion-option value="5895">5895</ion-option>
+      <ion-option value="6226">6226</ion-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label>Volume</ion-label>
+    <ion-select>
+      <ion-option value="volume_tall">Tall</ion-option>
+      <ion-option value="volume_low">Low</ion-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label>Ball Storage</ion-label>
+    <ion-input type="number" placeholder="Size"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Own Rope</ion-label>
+    <ion-select>
+      <ion-option value="rope_yes">Yes</ion-option>
+      <ion-option value="rope_no">No</ion-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label>Speciality</ion-label>
+    <ion-input type="text" placeholder="Describe"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Pilot</ion-label>
+    <ion-select>
+      <ion-option value="pilot_yes">Yes</ion-option>
+      <ion-option value="pilot_no">No</ion-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label>Vision</ion-label>
+    <ion-select>
+      <ion-option value="vision_yes">Yes</ion-option>
+      <ion-option value="vision_no">No</ion-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label>Ground Gear Collector</ion-label>
+    <ion-select>
+      <ion-option value="groundgear_yes">Yes</ion-option>
+      <ion-option value="groundgear_no">No</ion-option>
+    </ion-select>
+  </ion-item>
+  <h5>Autonomous</h5>
+  <ion-item>
+    <ion-label>Cross Baseline?</ion-label>
+    <ion-select>
+      <ion-option value="auton_baseline_yes">Yes</ion-option>
+      <ion-option value="auton_baseline_no">No</ion-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label>Fuel</ion-label>
+    <ion-select>
+      <ion-option value="auton_fuel_high">High</ion-option>
+      <ion-option value="auton_fuel_low">Low</ion-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label>Gear Placement</ion-label>
+    <ion-select>
+      <ion-option value="auton_gear_yes">Yes</ion-option>
+      <ion-option value="auton_gear_no">No</ion-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label>Gear Placement Location</ion-label>
+    <ion-select>
+      <ion-option value="auton_gearlocation_any">Any</ion-option>
+      <ion-option value="auton_gearlocation_left">Left</ion-option>
+      <ion-option value="auton_gearlocation_middle">Middle</ion-option>
+      <ion-option value="auton_gearlocation_right">Right</ion-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label>Activate Hopper</ion-label>
+    <ion-select>
+      <ion-option value="auton_hopper_yes">Yes</ion-option>
+      <ion-option value="auton_hopper_no">No</ion-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label>Activate Hopper Location</ion-label>
+    <ion-select>
+      <ion-option value="auton_gearhopper_any">Any</ion-option>
+      <ion-option value="auton_gearhopper_left">Left</ion-option>
+      <ion-option value="auton_gearhopper_right">Right</ion-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label>Collect Fuel</ion-label>
+    <ion-select>
+      <ion-option value="auton_fuel_yes">Yes</ion-option>
+      <ion-option value="auton_fuel_no">No</ion-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label>Shoot Collected Fuel</ion-label>
+    <ion-select>
+      <ion-option value="auton_fuel_yes">Yes</ion-option>
+      <ion-option value="auton_fuel_no">No</ion-option>
+    </ion-select>
+  </ion-item>
+  <h5>Teleop</h5>
+  <ion-item>
+    <ion-label>Fuel</ion-label>
+    <ion-select>
+      <ion-option value="teleop_fuel_high">High</ion-option>
+      <ion-option value="teleop_fuel_low">Low</ion-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label>Fuel Ground Collector</ion-label>
+    <ion-select>
+      <ion-option value="teleop_fuelground_yes">Yes</ion-option>
+      <ion-option value="teleop_fuelground_no">No</ion-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label>Fuel From Hopper</ion-label>
+    <ion-select>
+      <ion-option value="teleop_fuelhopper_yes">Yes</ion-option>
+      <ion-option value="teleop_fuelhopper_no">No</ion-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label>Loading Zone</ion-label>
+    <ion-select>
+      <ion-option value="teleop_loadingzone_yes">Yes</ion-option>
+      <ion-option value="teleop_loadingzone_no">No</ion-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label>Gear</ion-label>
+    <ion-select>
+      <ion-option value="teleop_gear_yes">Yes</ion-option>
+      <ion-option value="teleop_gear_no">No</ion-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label>Gear Retrieval Location</ion-label>
+    <ion-select>
+      <ion-option value="teleop_gear_ground">Ground</ion-option>
+      <ion-option value="teleop_gear_chute">Chute</ion-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label>Climb Rope</ion-label>
+    <ion-select>
+      <ion-option value="teleop_rope_yes">Yes</ion-option>
+      <ion-option value="teleop_rope_no">No</ion-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label>Climb Rope Location</ion-label>
+    <ion-select>
+      <ion-option value="teleop_rope_any">Any</ion-option>
+      <ion-option value="teleop_rope_left">Left</ion-option>
+      <ion-option value="teleop_rope_middle">Middle</ion-option>
+      <ion-option value="teleop_rope_right">Right</ion-option>
+    </ion-select>
+  </ion-item>
+  <h5>Drive Train</h5>
+  <ion-item>
+    <ion-label>Type</ion-label>
+    <ion-select>
+      <ion-option value="drive_tank">Tank</ion-option>
+      <ion-option value="drive_mecanum">Mecanum</ion-option>
+      <ion-option value="drive_swerve">Swerve</ion-option>
+      <ion-option value="drive_other">Other</ion-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label>Number of Wheels</ion-label>
+    <ion-input type="number" placeholder="Number"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Drive Motor Type</ion-label>
+    <ion-input type="text" placeholder="Type"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Speed</ion-label>
+    <ion-input type="number" placeholder="Feet Per Second"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Drop Center</ion-label>
+    <ion-select>
+      <ion-option value="drive_dropcenter_yes">Yes</ion-option>
+      <ion-option value="drive_dropcenter_no">No</ion-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label>Number of Drive Motors</ion-label>
+    <ion-input type="number" placeholder="Number"></ion-input>
+  </ion-item>
+  <h5>Notes</h5>
+  <ion-input type="textarea" placeholder="Realstic? Oddities? Speciality?"></ion-input>
+  <br>
+  <button ion-button color="secondary" block>Save</button>
 </ion-content>

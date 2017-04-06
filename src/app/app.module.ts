@@ -8,6 +8,8 @@ import { PitScouting } from '../pages/pitscouting/pitscouting';
 import { TeamLock } from '../pages/pitscouting/popover';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { SQLite } from '@ionic-native/sqlite';
+import { SqliteTemporary } from '../providers/sqlite-temporary';
 
 @NgModule({
   declarations: [
@@ -33,6 +35,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   providers: [
     StatusBar,
     SplashScreen,
+    SQLite,
+    SqliteTemporary,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

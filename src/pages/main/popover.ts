@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ViewController, AlertController } from 'ionic-angular';
+import { SqliteTemporary } from '../../providers/sqlite-temporary';
 import * as Bcryptjs from "bcryptjs";
 
 @Component({
@@ -7,17 +8,20 @@ import * as Bcryptjs from "bcryptjs";
 })
 
 export class GodMode {
-  
   public hash: string;
   public result: boolean;
 
-  constructor(public viewCtrl: ViewController, public alertCtrl: AlertController) { }
+  constructor(public viewCtrl: ViewController, public alertCtrl: AlertController, public sqlite: SqliteTemporary) { }
+
+  new() {
+    this.sqlite.openDb();
+  }
 
   authentication() {
     let prompt = this.alertCtrl.create({
       title: 'Gode Mode Authentication',
       message: "Only the heads of the Scouting Team can access this",
-      inputs : [
+      inputs: [
         {
           name: 'Password',
           type: 'password',
@@ -34,8 +38,10 @@ export class GodMode {
         },
         {
           text: 'Authenticate',
-          handler: data =>{
-            this.result = Bcryptjs.compareSync(data, "$2a$06$BLaLTSB8AixB.bd4OLNKuOc.CXMS/I27haszcgITbN6niSuAZhv1y");
+          handler: data => {
+            this.hash = "$2a$10$ULkgRFdPYbHnwKhqVL0ELu7f4tF1foMH8GMwKqHklSeDK2vC2s1gS";
+            console.log('Decryption Start');
+            this.result = Bcryptjs.compareSync(data, this.hash);
             console.log(this.result);
           }
         }
